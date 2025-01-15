@@ -40,12 +40,29 @@ D.
 
     AboutCountroller.java
 
-        Lines 6 - 7: Defining controller class
+        Lines 6 - 7: Defined controller class.
 
-        Lines 9 - 11: Maps About URL to the about() method
+        Lines 9 - 11: Mapped About URL to the about() method.
 
 E.
 
+    BootStrapData.java
+        
+        Lines 2 and 6: Added to grant access to the InHouse domain/repository.
+        
+        Line 28: Declared private final ProductRepository productRepository; to let Spring inject an instance of ProductRepository so I can use its methods.
+        
+        Line 30: Updated the constructor to include InHousePartRepository so this class can use the methods from each.
+
+        Line 33 and 34: Assigned the injected instances to their respective classes to enable access to their repository methods.
+
+        Line 40: Implemented an if statement to check if the partRepository AND productRepository are empty. If they are, the following block of code is run.
+
+        Lines 41 to 63: Created 3 objects (parts relabeled as accessories on mainscreen.html) and listed their properties, which were then saved to the outsourcedPartRepository.
+
+        Lines 65 to 77: Created 2 objects (parts relabeled as accessories on mainscreen.html) and listed their properties, which were then saved to the inhousePartRepository.
+
+        Lines 85 to 94: Updated with 5 objects (products relabeled as instruments on mainscreen.html) and listed their properties, which were then saved to the productRepository.
 F.
 
 G.
