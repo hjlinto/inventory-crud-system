@@ -58,13 +58,34 @@ E.
 
         Line 40: Implemented an if statement to check if the partRepository AND productRepository are empty. If they are, the following block of code is run.
 
-        Lines 41 to 63: Created 3 objects (parts relabeled as accessories on mainscreen.html) and listed their properties, which were then saved to the outsourcedPartRepository.
+        Lines 41 - 63: Created 3 objects (parts relabeled as accessories on mainscreen.html) and listed their properties, which were then saved to the outsourcedPartRepository.
 
-        Lines 65 to 77: Created 2 objects (parts relabeled as accessories on mainscreen.html) and listed their properties, which were then saved to the inhousePartRepository.
+        Lines 65 - 77: Created 2 objects (parts relabeled as accessories on mainscreen.html) and listed their properties, which were then saved to the inhousePartRepository.
 
-        Lines 85 to 94: Updated with 5 objects (products relabeled as instruments on mainscreen.html) and listed their properties, which were then saved to the productRepository.
+        Lines 85 - 94: Updated with 5 objects (products relabeled as instruments on mainscreen.html) and listed their properties, which were then saved to the productRepository.
 F.
+    
+    mainscreen.html
+        
+        Line 87: Added Buy Now button to the right of Update/Delete buttons with a different color to distinguish it.
 
+    ProductController.Java
+
+        Lines 1 - 20: Created a new Controller for "Buy Now" button on mainscreen.html.
+
+        Lines 23 - 35: Implemented feature to subtract 1 product from the inventory if that product is available. If this occurs, the user is sent to purchasesuccess.html, but if it fails they're sent to purchaseError.html.
+
+    purchaseSuccess.html
+
+        Lines 1 - 10: Designed a webpage that acts as confirmation to the user that their purchase was successful when they clicked the "Buy Now" button on mainscreen.html.
+        
+        Line 8: Included a return to mainscreen button.
+
+    purchaseError.html
+
+        Lines 1 - 10: Designed a webpage that notifies the user that their purchase was unsuccessful and the product is out of stock when they clicked the "Buy Now" button on mainscreen.html.
+        
+        Line 8: Included a return to mainscreen button.
 G.
 
 H.
