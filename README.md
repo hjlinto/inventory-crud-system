@@ -229,4 +229,10 @@ I.
         Lines 160 - 177: Added unit tests for getMinInv and getMaxInv.
 
 J.
+    
+    Removed DeletePartValidator.java and ValidDeletePart.java from /Validators as they both went unused.
+    
 
+    Part.java
+        
+        Line 5 and 20: Removed to allow for ValidDeletePart.java to be deleted without conflict. The annotation was added to the class but never used.
