@@ -224,5 +224,9 @@ H.
         Lines 32 - 36: Captured errors for min/max out of bounds and respond to user with feedback.
 I.
 
+    PartTest.java
+
+        Lines 160 - 177: Added unit tests for getMinInv and getMaxInv.
+
 J.
 
