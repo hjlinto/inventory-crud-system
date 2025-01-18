@@ -44,7 +44,7 @@ public class BootStrapData implements CommandLineRunner {
             part1.setInv(25);
             part1.setPrice(79.99);
             part1.setId(100L);
-            outsourcedPartRepository.save(part1);
+            partRepository.save(part1);
 
             OutsourcedPart part2 = new OutsourcedPart();
             part2.setCompanyName("Sarah's Strings");
@@ -52,7 +52,7 @@ public class BootStrapData implements CommandLineRunner {
             part2.setInv(100);
             part2.setPrice(12.99);
             part2.setId(101L);
-            outsourcedPartRepository.save(part2);
+            partRepository.save(part2);
 
             OutsourcedPart part3 = new OutsourcedPart();
             part3.setCompanyName("Sarah's Strings");
@@ -60,21 +60,21 @@ public class BootStrapData implements CommandLineRunner {
             part3.setInv(100);
             part3.setPrice(19.99);
             part3.setId(102L);
-            outsourcedPartRepository.save(part3);
+            partRepository.save(part3);
 
             InhousePart part4 = new InhousePart();
             part4.setName("Strings (Viola)");
             part4.setInv(100);
             part4.setPrice(9.99);
             part4.setId(103L);
-            inhousePartRepository.save(part4);
+            partRepository.save(part4);
 
             InhousePart part5 = new InhousePart();
             part5.setName("String (Violin)");
             part5.setInv(100);
             part5.setPrice(9.99);
             part5.setId(104L);
-            inhousePartRepository.save(part5);
+            partRepository.save(part5);
 
             List<OutsourcedPart> outsourcedParts = (List<OutsourcedPart>) outsourcedPartRepository.findAll();
             for (OutsourcedPart part : outsourcedParts) {

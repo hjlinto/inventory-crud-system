@@ -29,6 +29,11 @@
 <p><input type="text" th:field="*{maxInv}" placeholder="Maximum Inventory" class="form-control mb-4 col-4"/></p>
     <p th:if="${#fields.hasErrors('maxInv')}" th:errors="*{maxInv}">Inventory can't go above maximum</p>
 <p><input type="submit" value="Submit" /></p>
+<p>
+<div th:if="${#fields.hasAnyErrors()}">
+    <ul><li th:each="err: ${#fields.allErrors()}" th:text="${err}"></li></ul>
+</div>
+</p>
 </form>
 <a href="http://localhost:8080/">Link
     to Main Screen</a>

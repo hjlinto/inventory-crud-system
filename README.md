@@ -148,7 +148,80 @@ G.
     
     application
 H.
+    
+    BootStrapData
 
+        Lines 49, 59, 69, 78, 87: Updated parts being stored to partRepository instead of respective InHouseRepository/OutsourcedRepository as suggested by instructor.
+
+    InHousePartValidation.java
+        
+        Lines 10 - 21: Added checks for if inventory is already at or below/above minimum or maximum and sends respective error message when breaking their rules.
+
+    OutsourcedPartValidation.java
+
+        Lines 10 - 21: Added checks for if inventory is already at or below/above minimum or maximum and sends respective error message when breaking their rules.
+
+    MinimumParts.java
+        
+        Line 10: Specified this class as a validation constrain for MinimumParts.
+
+        Line 11: Specified this can be applied to classes and enums.
+
+        Line 12: Specified this is available through runtime.
+
+        Lines 13 - 14: Defined MinimumParts and attribute that returns a message about minimum parts.
+
+        Line 15: Enabled grouping of constraints. 
+
+    MinimumPartsValidator.java
+        
+        Line 9: Defined class for MinimumPartsValidator.
+
+        Lines 11 - 13: Enabled Spring to inject AppplicationContext when validator is created.
+
+        Lines 15 - 18: Enabled this method to override the method from ConstraintValidator gave access to properties of MinimumParts.
+
+        Lines 20 - 24: Implemented validation logic for checking if inventory is greater than or equal to the minimum allowed inventory.
+
+    MaximumParts.java
+
+        Line 10: Specified this class as a validation constrain for MaximumParts.
+
+        Line 11: Specified this can be applied to classes and enums.
+
+        Line 12: Specified this is available through runtime.
+
+        Lines 13 - 14: Defined MaximumParts and attribute that returns a message about maximum parts.
+
+        Line 15: Enabled grouping of constraints. 
+
+    MaximumPartsValidator.java
+        
+        Line 10: Defined class for MaximumPartsValidator.
+
+        Lines 11 - 13: Enabled Spring to inject AppplicationContext when validator is created.
+
+        Lines 15 - 18: Enabled this method to override the method from ConstraintValidator gave access to properties of MaximumParts.
+
+        Lines 20 - 24: Implemented validation logic for checking if inventory is less than or equal to the maximum allowed inventory.
+
+    Part.java
+
+        Lines 24 - 25: Included annotations for max and min above class Part to enforce validation rules.
+
+        Lines 35 - 38: Moved and changed min/max from lines 38 - 41 here per recommendation from instructor.
+
+    EnufPartsValidator.java:
+
+        Lines 36 - 40: Added logic for validation of product number needed for update.
+
+    InhousePartForm.html
+
+        Lines 31 - 35: Captured errors for min/max out of bounds and respond to user with feedback.
+
+    OutsourcedPartForm.html
+        
+        Lines 32 - 36: Captured errors for min/max out of bounds and respond to user with feedback.
 I.
 
 J.
