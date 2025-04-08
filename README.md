@@ -28,7 +28,7 @@ This project was built on a provided base structure for an Inventory Management 
 - Enhancing data validation through custom annotations and constraint validators for inventory minimum and maximum values
 - Updating forms to collect min/max inputs and display user-friendly error messages
 - Writing unit tests to verify new functionality
-- Refactoring data seeding logic to align with improved data structure and instructor recommendations
+- Refactoring data seeding logic to align with improved data structure
 - Removing unused validation classes for production-readiness
 
 These contributions were implemented across several Java classes, HTML templates, and configuration files, with full version control and commit documentation.
@@ -41,7 +41,6 @@ These contributions were implemented across several Java classes, HTML templates
 - **Spring Boot**
 - **Thymeleaf**
 - **HTML/CSS**
-- **JUnit 5** (for unit testing)
 
 ---
 
