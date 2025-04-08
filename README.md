@@ -46,7 +46,26 @@ These contributions were implemented across several Java classes, HTML templates
 ---
 
 ## Project Structure
-/src ├── controller/ │ ├── AboutController.java │ ├── ProductController.java ├── model/ │ ├── Part.java │ ├── InHousePart.java │ ├── OutsourcedPart.java ├── service/ │ ├── PartServiceImpl.java │ ├── InhousePartServiceImpl.java │ ├── OutsourcedPartServiceImpl.java ├── validators/ │ ├── MaximumPartsValidator.java │ ├── MinimumPartsValidator.java ├── data/ │ └── BootStrapData.java /resources ├── templates/ │ ├── mainscreen.html │ ├── about.html │ ├── purchaseSuccess.html │ ├── purchaseError.html ├── static/ ├── application.properties
+```
+src/
+├── main/
+│   ├── java/com/example/demo/
+│   │   ├── bootstrap/               # Seed data for initial app setup
+│   │   ├── controllers/             # All UI and route logic (Spring controllers)
+│   │   ├── domain/                  # Data models: Parts, Products, etc.
+│   │   ├── repositories/            # Interfaces for data access (Spring Data JPA)
+│   │   ├── service/                 # Business logic implementations
+│   │   └── validators/              # Custom validation annotations and logic
+│   └── resources/
+│       ├── templates/               # Thymeleaf HTML templates (UI views)
+│       ├── static/css/              # Custom CSS styles
+│       └── application.properties   # Spring Boot configuration
+├── test/
+│   └── java/com/example/demo/
+│       ├── domain/                  # Unit tests for model classes
+│       ├── repositories/            # Repository behavior tests
+│       └── service/                 # Service layer tests
+```
 
 ---
 
