@@ -2,7 +2,7 @@
 
 A full-featured Java-based inventory management system designed for a fictional musical instrument company, **Bow and Bridge**. This application provides a web interface for managing products and parts, with real-time inventory validation, dynamic navigation, and a clean user experience.
 
-This project builds upon a provided inventory management system skeleton. As part of the D287 Performance Assessment, I extended and customized the system with new features, validation logic, UI enhancements, and tests detailed below.
+This project builds upon a provided inventory management system skeleton, expanded with new features, validation logic, UI enhancements, and tests detailed below.
 
 ---
 
