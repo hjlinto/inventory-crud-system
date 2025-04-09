@@ -88,6 +88,13 @@ https://github.com/hjlinto/bow-and-bridge-ims.git
 ```
 4. Open browser and navigate to:
    http://localhost:8080/
+   
+---
+
+## Reflections
+- In a future iteration, implementing a relational database such as PostgreSQL would be an improvment upon using seed data for memory. This would allow real-time inventory updates and historical tracking.
+
+---
 
 ## Author
 Created by: Hunter J Linton
